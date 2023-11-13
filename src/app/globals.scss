@@ -1,0 +1,957 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&family=Poppins:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 12vh;
+  background-color: #E4EBF0;
+
+  .NavPrincipal{
+    margin-left: 1.1rem;
+    padding: 0.9rem;
+  }
+
+  .NavLogar{
+    margin-left: 1.1rem;
+    padding: 0.9rem;
+  
+    & a{
+      background-color: #3b4f86;
+    }
+  
+  }
+
+  & a{
+    color: #E4EBF0;
+    font-size: 0.9em;
+    padding: 0.7rem;
+    text-decoration: none;
+    background-color: #4180AB;
+    border: none;
+    border-radius: 0.2rem;
+    margin: 15px;
+  }
+
+  & a:hover{
+    color: #bec7dd;
+  }
+
+}
+
+main{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  height: 83vh;
+}
+
+// HOME ==============================================================================
+
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    & img{
+        max-width: 450px;
+        float: left;
+    }
+
+    & button{
+        position: relative;
+        margin-left: 100px;
+        padding: 10px;
+        background-color: #E4EBF0;
+        border: 0px solid;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .Home-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+        .TextoHome {
+            justify-content: center;
+            text-align: justify;
+        
+            & h2{
+            font-size: 60px;
+            display: inline;
+            color: #4180AB;
+            margin-right: 10px;
+            }
+        
+            & h3{
+                font-size: 60px;
+                margin: 0;
+                
+            }
+            & h4{
+                font-size: 30px;
+                display: inline;
+                color: #4180AB;
+            }
+        
+            & p{
+                font-size: 20px;
+                text-align: center;
+                margin:15px;
+                
+            }
+        }
+    }
+
+}
+
+
+// APROVADO ===========================================================================
+
+.Aprovado{
+    justify-content: center;
+    align-items: center;
+    margin: 0.8rem;
+    padding: 1.1rem;
+
+    .AprovadoContainer{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        & h1{
+            color:#8AB3CF;
+            font-size: 35px;
+        }
+        & h4{
+            font-size: 25px;
+        }
+    
+    }
+}
+
+// BICICLETA ===========================================================================
+
+.Bicicleta{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+
+    .TituloBicicleta{
+        display: flex;
+        justify-content: center;
+        color:#8AB3CF;
+        font-size: 30px;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .form-input-bicicleta{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 0;
+
+        
+        .input-box-bicicleta{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.1rem; 
+            width: 100%;
+
+            & input, select{
+                margin: 0.6rem 0;
+                margin-right: 10px;
+                padding: 0.8rem 1.2rem;
+                border: 1px solid rgb(97, 97, 97);
+                border-radius: 20px;
+                box-shadow: 6px 5px 6px #0000001c;
+            }
+
+            & input:hover{
+                background-color: #eeeeee75;
+            
+            }
+        }
+    }
+
+    .BotoesBi{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        
+        .botao-Instrucoes, .botao-Finalizar{
+            position: relative;
+            padding: 10px;
+            background-color: #E4EBF0;
+            text-decoration: none;
+            color: #4180AB;
+            border: 0px solid;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    }
+    
+    
+}
+
+// CONTATO ===========================================================================
+
+.Contato{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    .Contato1{
+        width: 70%;
+        height: 80vh;
+        display: flex;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+
+        .FormContato{
+            width:50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+        
+            .TituloContato{
+                width: 100%;
+                color: #01A1FD;
+                font-size: 20px;
+                text-align: center;
+                line-height: 35px;
+                text-shadow: 1px 1px 1px #000000;
+            }
+        
+            .form-input{
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 1rem 0;
+                flex-direction: column;
+        
+                .input-box{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 1.1rem; 
+                
+                    & input{
+                        margin: 0.6rem 0;
+                        padding: 1rem 1.2rem;
+                        border: 1px solid rgb(87, 87, 147);
+                        border-radius: 20px;
+                        box-shadow: 1px 1px 6px #0000001c;
+                    }
+                    & input:hover{
+                        background-color: #eeeeee75;
+                    
+                    }
+                }
+
+            }
+        }
+        .Enviar-botao button{
+            width: 20vh;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            border: none;
+            color: #ffff;
+            background-color: #4180AB;
+            padding: 0.7rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    
+    }
+
+}
+
+// CRIAR CONTA ===========================================================================
+
+.Cadastrar{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    .CadastrarContainer{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+
+        .CadastrarCampo1{
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            background-color: #8AB3CF;
+        
+            & h1{
+                font-size: 80px;
+                display: flex;
+                justify-content: left;
+                margin: 10px;
+                color:#4180AB;
+                text-shadow: 1px 1px rgba(0,0,0,.212);
+            }
+        
+            & h2{
+                font-size: 70px;
+                display: flex;
+                justify-content: left;
+                margin: 20px;
+                color:#FFFFFF;
+                text-shadow: 1px 1px rgba(0,0,0,.212);
+                margin-top: -40px;
+            }
+
+            .CadastrarTexto{
+                position: relative;
+                top: 40%;
+                left: 20%;
+            }
+            
+        }
+        .CadastrarCampo2{
+            width:50%;
+            margin: 3rem;
+            margin-left: 40px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .CadastrarTitulo{
+                display: flex;
+                justify-content: center;
+                color:#8AB3CF;
+                font-size: 30px;
+                text-shadow: 1px 1px 1px black;
+            }
+            .form-input-cadastrar{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 1rem 0;
+
+                .input-box-cadastrar{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 1.1rem; 
+                
+                    & input, select{
+                        width: 300px;
+                        margin: 0.6rem 0;
+                        margin-right: 10px;
+                        padding: 0.8rem 1.2rem;
+                        border: 1px solid rgb(97, 97, 97);
+                        border-radius: 20px;
+                        box-shadow: 6px 5px 6px #0000001c;
+                    }
+                
+                    & input:hover{
+                        background-color: #eeeeee75;
+                    
+                    }
+                }
+            }
+
+            .botao-Cadastrar{
+                width: 20vh;
+                margin-top: 0.2rem;
+                border: none;
+                text-decoration: none;
+                color: #FFFFFF;
+                border-radius: 20px;
+                background-color: #4180AB;
+                padding: 0.7rem;
+                cursor: pointer;
+            }
+
+            .TextoBaixo{
+                display:flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1.6rem;
+                padding: 0.4rem;
+            
+                & p{
+                    margin-right: 3px;
+                }
+            
+            }
+            
+        }
+        
+    }
+
+   
+    
+}
+
+
+
+
+
+
+// DADOS PESSOAIS ===========================================================================
+
+.DadosPessoais {
+    width: 100%;
+    min-height: 130vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ContainerDadosPessoais {
+        width: 80%;
+        padding: 2rem;
+        margin: 0.3rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.1rem;
+    
+        & h1{
+            color: #4180AB;
+            font-size: 60px;
+    
+        }
+    
+        & label{
+            width: 100%;
+            margin: 0.8rem 0;
+            padding: 0.8rem 1.2rem;
+            border: 1px solid rgb(97, 97, 97);
+            border-radius: 20px;
+            box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1); 
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color:#4180AB;
+            
+        }
+
+        .botaoVoltar{
+            text-align: right;
+            padding: 10px;
+            background-color: #E4EBF0;
+            text-decoration: none;
+            color: #4180AB;
+            border: 0px solid;
+            border-radius: 15px;
+            cursor: pointer;
+            display:block;
+            margin-left: auto
+        }
+    
+    }
+
+    
+
+}
+  
+// INSTRUÇÕES ===========================================================================
+
+.Instrucoes{
+    padding: 35px;
+    justify-content: center;
+    align-items: center;
+    margin:30px auto;
+    text-align: justify;
+    min-height: 83vh;
+    margin-top: 6rem;
+    
+    
+    &  h1{
+        color: #8AB3CF;
+        text-align: center;
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    & p{
+        text-align: justify;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .BotoesBii{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+      
+        .botaoinstrucoes{
+            position: relative;
+            float:right;
+            padding: 10px;
+            background-color: #E4EBF0;
+            text-decoration: none;
+            color: #4180AB;
+            border: 0px solid;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    }
+
+}
+
+// LOGIN ===========================================================================
+.Login{
+    max-width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+    .LoginContainer{
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+
+        .LoginCampo1{
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            background-color: #8AB3CF;
+            margin: 0;
+            padding: 0;
+        
+            & h1{
+                font-size: 80px;
+                display: flex;
+                justify-content: left;
+                margin: 10px;
+                color:#4180AB;
+                text-shadow: 1px 1px rgba(0,0,0,.212);
+            }
+        
+            & h2{
+                font-size: 70px;
+                display: flex;
+                justify-content: left;
+                margin: 20px;
+                color:#FFFFFF;
+                text-shadow: 1px 1px rgba(0,0,0,.212);
+                margin-top: -40px;
+            }
+            
+            .LoginTexto{
+                position: relative;
+                top: 40%;
+                left: 20%;
+            }
+ 
+        }
+
+        .LoginCampo2{
+            width:50%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 3rem;
+
+            .LoginTitulo{
+                display: flex;
+                color:#8AB3CF;
+                font-size: 30px;
+                text-shadow: 1px 1px 1px black;
+            }
+            .form-input-login{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 1rem 0;
+                flex-direction: column;
+
+                .input-box-login{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 1.1rem; 
+
+                    & input{
+                        width: 350px;
+                        margin: 0.6rem 0;
+                        padding: 1rem 1.2rem;
+                        border: 1px solid rgb(97, 97, 97);
+                        border-radius: 20px;
+                        box-shadow: 6px 5px 6px #0000001c;
+                    }
+
+                    & input:hover{
+                        background-color: #eeeeee75;
+                    
+                    }
+                }
+            }
+            .TextoBaixo{
+                display:flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1.6rem;
+                padding: 0.4rem;
+            
+                & p{
+                    margin-right: 3px;
+                }
+            
+            }
+            .botao-Login{
+                width: 100%;
+                margin-top: 0.2rem;
+                border: none;
+                text-decoration: none;
+                color: #ffff;
+                border-radius: 20px;
+                background-color: #4180AB;
+                padding: 0.7rem;
+                cursor: pointer; 
+            
+            }
+        }
+        
+    }
+
+
+   
+}
+
+// PAGINA PRINCIPAL ===========================================================================
+
+.PaginaPrincipal{
+    display:flex;
+    min-height: 83vh;
+
+    .Campo1{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    
+        & h1{
+            font-size: 90px;
+            color: #4180AB;
+            margin-left: 20px;
+        }
+    
+        & img{
+            margin-left: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+       
+    
+    .Campo2{
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #BDD1DE;
+
+        .botao-pp{
+            width: 400px;
+            min-height: 80px;
+            text-decoration: none;
+            justify-content: center;
+            text-align: center;
+            border: none;
+            padding: 1.3rem 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 30px;
+            font-size: 25px;
+            color: white;
+            background-color: #8AB3CF;
+            box-shadow: 1px 1px 6px #0000001c ;
+        } 
+    }
+
+    
+}
+
+
+// SOBRE NOS ===========================================================================
+
+.SobreNos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:100px auto;
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    flex-direction: row;
+    height: 85vh;
+    overflow-x: hidden;
+
+    .SobreNosCampo1{
+        width: 60%;
+        display: block;
+        margin: 30px;
+    
+        & h1{
+            color: #01A1FD;
+            font-size: 40px;
+            border: none;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px #000000;
+        }
+    
+        & p{
+            font-size: 20px;
+            text-align: justify;
+            margin-right: 20px;
+        }
+    }
+    
+    .SobreNosCampo2{
+        display: block;
+        width: 40%;
+        margin:20px;
+    
+        & h2 {
+            color: #01A1FD;
+            font-size: 28px;
+            text-align: center;
+            text-shadow: 1px 1px 1px #000000;
+        }
+    
+        & p {
+            font-size:20px;
+            margin: 5px;
+            text-align: center;
+        }
+    }
+
+    
+}
+
+
+// STATUS ===========================================================================
+
+.Status{
+    width: auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0.8rem;
+    padding: 0.6rem;
+
+    & p{
+        font-size: 20px;
+    }
+}
+
+
+
+// FOOTER ===========================================================================
+
+
+footer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  background-color:rgb(162, 194, 217)
+}
+
+
+// media query =======================================================================
+
+
+
+@media screen and (max-width: 1024px) {
+    .Home {
+      min-height: 120vh;
+    }
+  
+    .Home-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .Contato{
+        
+        display:flex;
+        
+
+        .TituloContato h1 {
+          font-size: 30px;
+        }
+      
+        .Contato1 {
+          height: 90vh;
+        }
+    }
+    .CadastrarContainer{
+        justify-content: center;
+        align-items: center;
+
+        .CadastrarCampo1 {
+          display: none;
+        }
+      
+        .CadastrarCampo2 {
+          width: 100%;
+        }
+    }
+  
+
+  
+  }
+
+  
+
+    @media screen and (max-width:768px){
+        // ==============================================
+        .SobreNos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:100px auto;
+            width: 100%;
+            flex-direction: column;
+            min-height: 220vh;
+
+            .SobreNosCampo1 p, .SobreNosCampo2 p{
+              font-size: 17px;
+            }
+          
+            .SobreNosCampo1 h1, .SobreNosCampo2 h2{
+              font-size: 30px;
+            
+              }
+          }
+      
+        
+        // =========================================
+        nav {
+          display: flex;
+          min-height: 14vh;
+          justify-content: space-between;
+          align-items: center;
+      
+          a {
+            font-size: 10px;
+            margin: 2px;
+          }
+        }
+      
+        .NavPrincipal {
+          margin: 0;
+          padding: 0;
+        }
+      
+        .NavLogar {
+          margin-left: 0;
+          padding: 0;
+        }
+        // =========================================
+
+        .CadastrarContainer{
+            width: 90%;
+
+            .form-input-cadastrar{
+                flex-direction: column;
+                flex-wrap: nowrap;
+    
+            }
+        }
+        
+    } 
+  
+    @media screen and (max-width: 1024px) {
+
+        .SobreNos{
+            height: 120vh;
+        }
+        // =========================================
+        .PaginaPrincipal{
+            display: flex;
+            flex-direction: column;
+            
+            .Campo1{
+                width:100%;
+                
+                h1{
+                    font-size: 80px;
+                }
+        
+                Image{
+                    margin: 1rem;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        
+            .Campo2{
+                width: 100%;
+            }
+        }
+
+      }
+      
+    
+
+@media screen and (max-width: 1324px){
+
+    .LoginCampo1{
+        display:none;
+    }
+    
+    .LoginContainer{
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .LoginCampo2{
+        width: 100%;
+    }
+}
+    
+
