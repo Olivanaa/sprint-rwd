@@ -13,7 +13,7 @@ nav{
   align-items: center;
   width: 100%;
   height: 12vh;
-  background-color: #E4EBF0;
+  background-color: #8ca3ff;
 
   .NavPrincipal{
     margin-left: 1.1rem;
@@ -24,18 +24,19 @@ nav{
     margin-left: 1.1rem;
     padding: 0.9rem;
   
-    & a{
-      background-color: #3b4f86;
+    a{
+        background-color: #3b4f86;
+        // background-color: #6480be;
     }
   
   }
 
-  & a{
+    a{
     color: #E4EBF0;
     font-size: 0.9em;
     padding: 0.7rem;
     text-decoration: none;
-    background-color: #4180AB;
+    background-color: #5b7ddc;
     border: none;
     border-radius: 0.2rem;
     margin: 15px;
@@ -88,6 +89,7 @@ main{
         .TextoHome {
             justify-content: center;
             text-align: justify;
+            line-height: 50px;
         
             & h2{
             font-size: 60px;
@@ -159,6 +161,7 @@ main{
         justify-content: center;
         color:#8AB3CF;
         font-size: 30px;
+        line-height: 60px;
         text-shadow: 1px 1px 1px black;
     }
 
@@ -207,6 +210,7 @@ main{
             border: 0px solid;
             border-radius: 15px;
             cursor: pointer;
+
         }
     }
     
@@ -224,7 +228,7 @@ main{
     box-sizing: border-box;
 
     .Contato1{
-        width: 70%;
+        width: 60%;
         height: 80vh;
         display: flex;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
@@ -244,7 +248,7 @@ main{
             .TituloContato{
                 width: 100%;
                 color: #01A1FD;
-                font-size: 20px;
+                font-size: 16px;
                 text-align: center;
                 line-height: 35px;
                 text-shadow: 1px 1px 1px #000000;
@@ -313,14 +317,14 @@ main{
             width: 50%;
             justify-content: center;
             align-items: center;
-            background-color: #8AB3CF;
+            background-color: #869fd3;
         
             & h1{
                 font-size: 80px;
                 display: flex;
                 justify-content: left;
                 margin: 10px;
-                color:#4180AB;
+                color:#6480be;
                 text-shadow: 1px 1px rgba(0,0,0,.212);
             }
         
@@ -428,7 +432,7 @@ main{
 
 .DadosPessoais {
     width: 100%;
-    min-height: 130vh;
+    height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -436,7 +440,7 @@ main{
     align-items: center;
 
     .ContainerDadosPessoais {
-        width: 80%;
+        width: 100%;
         padding: 2rem;
         margin: 0.3rem;
         display: flex;
@@ -445,26 +449,58 @@ main{
     
         & h1{
             color: #4180AB;
-            font-size: 60px;
-    
+            font-size: 60px;    
         }
     
-        & label{
-            width: 100%;
-            margin: 0.8rem 0;
-            padding: 0.8rem 1.2rem;
-            border: 1px solid rgb(97, 97, 97);
-            border-radius: 20px;
-            box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1); 
-            background-color: #ffffff;
+        .form-input-alterar{
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            color:#4180AB;
-            
-        }
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1.9rem 0;
+ 
+            & label{
+                color: #8AB3CF;
+                margin: 10px;
+            }
 
-        .botaoVoltar{
+        .input-box-alterar{
+
+                display: flex;
+                flex-direction: column;
+
+            & input, select{
+                    width: 300px;
+                    margin: 0.6rem 2;
+                    margin-right: 10px;
+                    padding: 0.8rem 1.2rem;
+                    border: 1px solid rgb(97, 97, 97);
+                    border-radius: 20px;
+                    box-shadow: 6px 5px 6px #0000001c;
+                }
+            
+            & input:hover{
+                    background-color: #eeeeee75;
+                
+                }
+          
+
+            }
+        }
+    .Botao-Alterar{
+            text-align: center;
+            font-size:15px;
+            width: 30vh;
+            margin-top: 0.3rem;
+            margin-right: 0.6rem;;
+            border: none;
+            text-decoration: none;
+            color: #FFFFFF;
+            border-radius: 20px;
+            background-color: #4180ab;
+            padding: 0.7rem;
+            cursor: pointer;
+        } 
+    .botaoVoltar{
             text-align: right;
             padding: 10px;
             background-color: #E4EBF0;
@@ -514,7 +550,7 @@ main{
         justify-content: space-between;
         margin-top: 15px;
       
-        .botaoinstrucoes{
+        .botao-Instrucoes{
             position: relative;
             float:right;
             padding: 10px;
@@ -525,6 +561,8 @@ main{
             border-radius: 15px;
             cursor: pointer;
         }
+
+        
     }
 
 }
@@ -548,7 +586,7 @@ main{
             width: 50%;
             justify-content: center;
             align-items: center;
-            background-color: #8AB3CF;
+            background-color: #869fd3;
             margin: 0;
             padding: 0;
         
@@ -557,7 +595,7 @@ main{
                 display: flex;
                 justify-content: left;
                 margin: 10px;
-                color:#4180AB;
+                color:#6480be;
                 text-shadow: 1px 1px rgba(0,0,0,.212);
             }
         
@@ -684,7 +722,7 @@ main{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: #BDD1DE;
+        background-color: #a7bee9;
 
         .botao-pp{
             width: 400px;
@@ -699,7 +737,7 @@ main{
             margin: 30px;
             font-size: 25px;
             color: white;
-            background-color: #8AB3CF;
+            background-color: #6480be;
             box-shadow: 1px 1px 6px #0000001c ;
         } 
     }
@@ -754,7 +792,7 @@ main{
             color: #01A1FD;
             font-size: 28px;
             text-align: center;
-            text-shadow: 1px 1px 1px #000000;
+            text-shadow: 1px 1px 2px #000000;
         }
     
         & p {
@@ -797,7 +835,7 @@ footer{
   align-items: center;
   width: 100%;
   height: 5vh;
-  background-color:rgb(162, 194, 217)
+  background-color:#4361a8
 }
 
 
@@ -816,20 +854,28 @@ footer{
     }
     .Contato{
         
-        display:flex;
-        
+        display:flex;     
 
         .TituloContato h1 {
           font-size: 30px;
         }
       
         .Contato1 {
-          height: 90vh;
+        width: 100%;
+        height: 90vh;
         }
     }
+
+
+  }
+  @media screen and (max-width: 1350px){
+    .Cadastrar{
+    height: 120vh;
+
     .CadastrarContainer{
         justify-content: center;
         align-items: center;
+        
 
         .CadastrarCampo1 {
           display: none;
@@ -837,14 +883,27 @@ footer{
       
         .CadastrarCampo2 {
           width: 100%;
+
+            .input-box-cadastrar{
+                display: flex;
+                margin-bottom: 1.8rem; 
+        
+                input, select{
+                    width: 150px;
+                    margin: 0.1rem 0;
+                    margin-right: 15px;
+                    padding: 0.8rem 1.2rem;
+                    border: 1px solid rgb(97, 97, 97);
+                    border-radius: 20px;
+                    box-shadow: 6px 5px 6px #0000001c;
+                }
+            }
         }
+    
     }
   
-
-  
+    }
   }
-
-  
 
     @media screen and (max-width:768px){
         // ==============================================
@@ -855,7 +914,7 @@ footer{
             margin:100px auto;
             width: 100%;
             flex-direction: column;
-            min-height: 220vh;
+            min-height: 190vh;
 
             .SobreNosCampo1 p, .SobreNosCampo2 p{
               font-size: 17px;
@@ -892,15 +951,25 @@ footer{
         }
         // =========================================
 
-        .CadastrarContainer{
-            width: 90%;
+        .Cadastrar{
+            justify-content: center;
+            align-items: center;
+            height: 180vh;
 
-            .form-input-cadastrar{
-                flex-direction: column;
-                flex-wrap: nowrap;
-    
+            .CadastrarContainer {
+                width: 90%;
+                
+
+                .CadastrarTitulo{
+                    display: flex;
+                    text-align: center;
+                    color:#8AB3CF;
+                    font-size: 16px;
+                    line-height: 1;
+                    text-shadow: 1px 1px 1px black;
+                }
             }
-        }
+        } 
         
     } 
   

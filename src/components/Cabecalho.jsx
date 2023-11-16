@@ -7,7 +7,7 @@ export default function Cabecalho(){
                 <Link href='/'>Home</Link>
                 <Link href='/sobrenos'>Sobre Nos</Link>
                 <Link href='/contato'>Contato</Link>
-                <Link href='/paginaprincipal'>Perfil</Link>
+                <Link href='/login'>Perfil</Link>
             </div>
             <div className="NavLogar">
                 <Link href='/login' className="NavLogin">Login</Link>

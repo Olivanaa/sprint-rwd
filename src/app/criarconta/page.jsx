@@ -60,8 +60,9 @@ export default function criarConta() {
 
 
     const handleSubmit = e => {
+        
         e.preventDefault();
-    
+
         fetch(`http://localhost:8080/Sprint4/api/cliente/criarconta`, {
             method: 'POST',
             headers: {
@@ -70,67 +71,135 @@ export default function criarConta() {
             },
             body: JSON.stringify(usuario)
         })
-        .then(window.location = '/login')
-        .catch(error => console.error(error))  
+            .then(window.location = '/login')
+            .catch(error => console.error(error))
     }
-    
+
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" name='nome' value={usuario.nome}
-                    placeholder="Nome" onChange={handleChange} /> <br />
+        <div className="Cadastrar">
 
-                <input type="text" name='sobrenome' value={usuario.sobrenome}
-                    placeholder="Sobrenome" onChange={handleChange} /> <br />
+            <div className="CadastrarContainer">
+                <div className='CadastrarCampo1'>
+                    <div className='CadastrarTexto'>
+                        <h1>Seja</h1>
+                        <h2>Bem-vindo</h2>
+                    </div>
+                </div>
+                <div className='CadastrarCampo2'>
+                    <form onSubmit={handleSubmit}>
+                        <div className='CadastrarTitulo'>
+                            <h1>CRIAR CONTA</h1>
+                        </div>
+                        <div className="form-input-cadastrar">
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="name">Nome</label>
+                                <input type="text" name='nome' value={usuario.nome}
+                                    placeholder="Digite seu primeiro nome" onChange={handleChange} required />
 
-                <input type="text" name='cpf' value={usuario.cpf}
-                    placeholder="CPF" onChange={handleChange} /> <br />
+                            </div>
 
-                <input type="text" name='genero' value={usuario.genero}
-                    placeholder="Genero" onChange={handleChange} /> <br />
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="sobrenome">Sobrenome</label>
+                                <input type="text" name='sobrenome' value={usuario.sobrenome}
+                                    placeholder="Digite seu sobrenome" onChange={handleChange} required />
 
-                <input type="date" name='dtaNasc' value={usuario.dtaNasc}
-                    placeholder="Data de Nascimento" onChange={handleChange} /> <br />
+                            </div>
 
-                <input type="text" name='cep' value={usuario.cep}
-                    placeholder="CEP" onChange={handleChange} onBlur={buscarCep} /> <br />
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="cpf">CPF</label>
+                                <input type="text" name='cpf' value={usuario.cpf}
+                                    placeholder="Digite seu cpf" onChange={handleChange} required />
+                            </div>
 
-                <input type="text" name='logradouro' value={usuario.logradouro}
-                    placeholder="Logradouro" onChange={handleChange} /> <br />
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="genero">Gênero</label>
+                                <select name="genero" className="tamanho" onChange={handleChange} required value={usuario.genero}>
+                                    <option value="nd">Escolha seu gênero</option>
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Feminino</option>
+                                    <option value="NB">Não-binário</option>
+                                    <option value="NR">Prefiro não dizer</option>
+                                </select>
+                            </div>
 
-                <input ref={numeroRef} type="text" name='numero' value={usuario.numero}
-                    placeholder="Numero" onChange={handleChange} /> <br />
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="dtaNasc">Data de Nascimento</label>
+                                <input type="date" name='dtaNasc' value={usuario.dtaNasc}
+                                    onChange={handleChange} required />
+                            </div>
 
-                <input type="text" name='complemento' value={usuario.complemento}
-                    placeholder="Complemento" onChange={handleChange} /> <br />
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="cep">CEP</label>
+                                <input type="text" name='cep' value={usuario.cep}
+                                    placeholder="Digite seu CEP" onChange={handleChange} onBlur={buscarCep} required />
+                            </div>
 
-                <input type="text" name='bairro' value={usuario.bairro}
-                    placeholder="Bairro" onChange={handleChange} /> <br />
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="logradouro">Logradouro</label>
+                                <input type="text" name='logradouro' value={usuario.logradouro}
+                                    placeholder="Logradouro" onChange={handleChange} required />
+                            </div>
 
-                <input type="text" name='cidade' value={usuario.cidade}
-                    placeholder="Cidade" onChange={handleChange} /> <br />
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="numero">Número</label>
+                                <input ref={numeroRef} type="text" name='numero' value={usuario.numero}
+                                    placeholder="Numero" onChange={handleChange} required />
+                            </div>
 
-                <input type="text" name='estado' value={usuario.estado}
-                    placeholder="Estado" onChange={handleChange} /> <br />
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="complemento">Complemento</label>
+                                <input type="text" name='complemento' value={usuario.complemento}
+                                    placeholder="Complemento" onChange={handleChange} />
+                            </div>
 
-                <input type="text" name='telefone' value={usuario.telefone}
-                    placeholder="Telefone" onChange={handleChange} /> <br />
 
-                <input type="text" name='email' value={usuario.email}
-                    placeholder="Email" onChange={handleChange} /> <br />
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="bairro">Bairro</label>
+                                <input type="text" name='bairro' value={usuario.bairro}
+                                    placeholder="Bairro" onChange={handleChange} required />
+                            </div>
 
-                <input type="text" name='login' value={usuario.login}
-                    placeholder="Login" onChange={handleChange} /> <br />
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="cidade">Cidade</label>
+                                <input type="text" name='cidade' value={usuario.cidade}
+                                    placeholder="Cidade" onChange={handleChange} required />
+                            </div>
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="estado">Estado</label>
+                                <input type="text" name='estado' value={usuario.estado}
+                                    placeholder="Estado" onChange={handleChange} required />
+                            </div>
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="email">Email</label>
+                                <input id="email" type="email" name="email" value={usuario.email} placeholder="Digite seu email" onChange={handleChange} required />
+                            </div>
 
-                <input type="text" name='senha' value={usuario.senha}
-                    placeholder="Senha" onChange={handleChange} /> <br />
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="telefone">Telefone</label>
+                                <input id="telefone" type="tel" name="telefone" value={usuario.telefone} placeholder="Digite seu telefone" onChange={handleChange} required />
+                            </div>
 
-                <button type="submit">Enviar</button>
-                <Link href={'/'}>Cancelar</Link>
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="login">Login</label>
+                                <input id="login" type="text" name="login" value={usuario.login} placeholder="Digite seu login" onChange={handleChange} required />
+                            </div>
 
-            </form>
+                            <div className="input-box-cadastrar">
+                                <label htmlFor="senha">Senha</label>
+                                <input id="senha" type="password" name="senha" value={usuario.senha} placeholder="Digite sua senha" onChange={handleChange} required />
+                            </div>
+                            <Link href={'/'}  className='botao-Cancelar'>Cancelar</Link>
+                            <button type='submit' className='botao-Cadastrar'>Criar conta</button>
+                        </div>     
+                    </form>
+                    <div className='TextoBaixo'>
+                        <p>Já possui uma conta?</p>
+                        <Link href='/login'>Faça login</Link>
+                    </div>
+                </div>
+                </div>
+                </div>
 
-        </div>
     )
 }
